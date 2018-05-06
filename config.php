@@ -2,7 +2,7 @@
 	header("Content-Type: text/html; charset='utf-8'");//установка кодировки
 	
 	try {
-		$link=new PDO('mysql:host=localhost;dbname=2', "root", "");
+		$link=new PDO('mysql:host=localhost;dbname=3', "root", "");
 	} 
 	catch (PDOException $e) {
 		echo $e->getMessage();

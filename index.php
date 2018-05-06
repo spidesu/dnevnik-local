@@ -35,6 +35,8 @@ $teacherClass = new Teacher();
 
 $classRoomClass = new ClassRoom();
 
+$globalAdminClass->first_start(1);
+
 switch($_SESSION['permission']){//отображение контента
 	case 1: //пользователь глобальный администратор
 		require_once("permissions/GlobalAdmin.php");
